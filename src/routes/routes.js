@@ -1,5 +1,4 @@
 const axios = require('axios');
-const exports = (module.exports = {});
 
 const onGlobalSuccess = response => {
   return response.data;
@@ -9,7 +8,7 @@ const onGlobalError = error => {
   return Promise.reject(error);
 };
 
-exports.pressLeft = () => {
+const pressLeft = () => {
   const config = {
     method: 'GET',
     url: '',
@@ -21,7 +20,7 @@ exports.pressLeft = () => {
     .catch(onGlobalError);
 };
 
-exports.pressRight = () => {
+const pressRight = () => {
   const config = {
     method: 'GET',
     url: '',
@@ -33,7 +32,7 @@ exports.pressRight = () => {
     .catch(onGlobalError);
 };
 
-exports.pressA = () => {
+const pressA = () => {
   const config = {
     method: 'GET',
     url: '',
@@ -43,4 +42,10 @@ exports.pressA = () => {
   return axios(config)
     .then(onGlobalSuccess)
     .catch(onGlobalError);
+};
+
+module.exports = {
+  pressRight,
+  pressLeft,
+  pressA,
 };
