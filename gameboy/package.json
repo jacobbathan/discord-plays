@@ -1,0 +1,22 @@
+{
+  "name": "jsgameboy-master",
+  "version": "1.0.0",
+  "description": "GameBoy emulator coded in JavaScript for browsers. You can see it working on http://gb.alexaladren.net",
+  "main": "GameBoy.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "keyboardjs": "^2.5.1",
+    "robotjs": "^0.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -9,11 +9,13 @@ bot.on('BOT ONLINE', () => {
 
 bot.on('message', msg => {
   if (msg.content === '!left') {
-    msg.reply('left');
+    routes.pressLeft();
   } else if (msg.content === '!right') {
-    msg.reply('right');
+    routes.pressRight();
   } else if (msg.content === '!a') {
-    msg.reply('a');
+    routes.pressA();
+  } else if (msg.content === '!up') {
+    routes.pressUp();
   }
 });
 
