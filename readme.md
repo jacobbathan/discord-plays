@@ -43,5 +43,5 @@ If you are building your own bot or using ours the commands are below.
 * Discord.js
 
 Authors 
-* **Jacob Bathan** [](https://github.com/jacobbathan) )
+* **Jacob Bathan** [](https://github.com/jacobbathan)
 * **Calvin Fronda** [](https://github.com/CalvinFronda)
