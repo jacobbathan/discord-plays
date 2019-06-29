@@ -4,10 +4,10 @@ const robot = require('robotjs');
 
 router.get('/left', (req, res) => {
   try {
-    res.send('go left');
+    robot.keyToggle('left', 'down');
     setTimeout(() => {
-      robot.keyToggle('left', 'down');
-    }, 2000);
+      robot.keyToggle('left', 'up');
+    }, 500);
   } catch (error) {
     res.send({ error: error.message });
   }
@@ -15,10 +15,10 @@ router.get('/left', (req, res) => {
 
 router.get('/right', (req, res) => {
   try {
-    res.send('go right');
+    robot.keyToggle('right', 'down');
     setTimeout(() => {
-      robot.keyToggle('right', 'down');
-    }, 2000);
+      robot.keyToggle('right', 'up');
+    }, 500);
   } catch (error) {
     res.send({ error: error.message });
   }
@@ -26,10 +26,10 @@ router.get('/right', (req, res) => {
 
 router.get('/up', (req, res) => {
   try {
-    res.send('go up');
+    robot.keyToggle('up', 'down');
     setTimeout(() => {
-      robot.keyToggle('up', 'down');
-    }, 2000);
+      robot.keyToggle('up', 'up');
+    }, 500);
   } catch (error) {
     res.send({ error: error.message });
   }
@@ -37,10 +37,10 @@ router.get('/up', (req, res) => {
 
 router.get('/down', (req, res) => {
   try {
-    res.send('go down');
+    robot.keyToggle('down', 'down');
     setTimeout(() => {
-      robot.keyToggle('down', 'down');
-    }, 2000);
+      robot.keyToggle('down', 'up');
+    }, 500);
   } catch (error) {
     res.send({ error: error.message });
   }
@@ -48,10 +48,10 @@ router.get('/down', (req, res) => {
 
 router.get('/pressB', (req, res) => {
   try {
-    res.send('b');
+    robot.keyToggle('a', 'down');
     setTimeout(() => {
-      robot.keyToggle('a', 'down');
-    }, 2000);
+      robot.keyToggle('a', 'up');
+    }, 500);
   } catch (error) {
     res.send({ error: error.message });
   }
@@ -59,10 +59,10 @@ router.get('/pressB', (req, res) => {
 
 router.get('/pressA', (req, res) => {
   try {
-    res.send('a');
+    robot.keyToggle('s', 'down');
     setTimeout(() => {
-      robot.keyToggle('s', 'down');
-    }, 2000);
+      robot.keyToggle('s', 'up');
+    }, 500);
   } catch (error) {
     res.send({ error: error.message });
   }
@@ -70,10 +70,10 @@ router.get('/pressA', (req, res) => {
 
 router.get('/pressStart', (req, res) => {
   try {
-    res.send('start');
+    robot.keyToggle('w', 'down');
     setTimeout(() => {
-      robot.keyToggle('w', 'down');
-    }, 2000);
+      robot.keyToggle('w', 'up');
+    }, 500);
   } catch (error) {
     res.send({ error: error.message });
   }
@@ -81,10 +81,10 @@ router.get('/pressStart', (req, res) => {
 
 router.get('/pressSelect', (req, res) => {
   try {
-    res.send('select');
+    robot.keyToggle('q', 'down');
     setTimeout(() => {
-      robot.keyToggle('q', 'down');
-    }, 2000);
+      robot.keyToggle('q', 'up');
+    }, 500);
   } catch (error) {
     res.send({ error: error.message });
   }
