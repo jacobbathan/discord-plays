@@ -2,7 +2,7 @@
 
 Discord plays is an entry in the Discord Hack Week that lets people load the bot in their discord channel and play a game thats streaming live on twitch! 
 
-Twitch Stream = twitch.tv/antigozzz
+Twitch Stream = twitch.tv/antigozzz (currently not live)
 
 Special thanks to **gb.alexaladren.net** for having a web broswer gameboy emulator for us to use. 
 
