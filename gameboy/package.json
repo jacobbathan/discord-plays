@@ -4,7 +4,7 @@
   "description": "GameBoy emulator coded in JavaScript for browsers. You can see it working on http://gb.alexaladren.net",
   "main": "GameBoy.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "fs": "0.0.1-security",
     "keyboardjs": "^2.5.1",
     "robotjs": "^0.5.1"
